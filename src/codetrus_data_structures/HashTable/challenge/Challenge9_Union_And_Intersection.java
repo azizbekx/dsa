@@ -7,7 +7,7 @@ import java.util.HashSet;
 public class Challenge9_Union_And_Intersection {
     //performs intersection between list
     public static <T> SinglyLinkedList<T> union(SinglyLinkedList<T> list1, SinglyLinkedList<T> list2) {
-        SinglyLinkedList<T> result = new SinglyLinkedList<>();
+        SinglyLinkedList<T> result = new SinglyLinkedList<T>();
         SinglyLinkedList<T>.Node first = list1.headNode;
         SinglyLinkedList<T>.Node second = list2.headNode;
         HashSet<T> set = new HashSet<>();

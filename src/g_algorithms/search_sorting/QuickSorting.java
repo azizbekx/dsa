@@ -39,7 +39,7 @@ public class QuickSorting {
             quickSort(arr, pi+1, right);
         }
     }
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int arr[] = {5,4,1,0,5,95,4,-100,200,0};
         int arrSize = 10;
         quickSort(arr, 0, arrSize - 1);

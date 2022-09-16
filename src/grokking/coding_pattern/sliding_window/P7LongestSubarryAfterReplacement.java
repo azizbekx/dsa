@@ -1,4 +1,4 @@
-package g_coding_patter.sliding_window;
+package grokking.coding_pattern.sliding_window;
 
 public class P7LongestSubarryAfterReplacement {
     public static int findLength(int[] arr, int k) {

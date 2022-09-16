@@ -1,4 +1,4 @@
-package g_algorithms.search_sorting;
+package code_trust.algorithms.searching_sorting;
 
 public class BasicSorting {
     /*

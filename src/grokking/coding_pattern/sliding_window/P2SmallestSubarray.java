@@ -1,4 +1,4 @@
-package g_coding_patter.sliding_window;
+package grokking.coding_pattern.sliding_window;
 
 public class P2SmallestSubarray {
     public static int findMinSubArray(int S, int[] arr){

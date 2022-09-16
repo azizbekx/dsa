@@ -1,4 +1,4 @@
-package codetrust_fast_3.array;
+package code_trust.blind;
 
 public class P1BinarySearch {
     static int binarySearch(int[] nums, int target) {

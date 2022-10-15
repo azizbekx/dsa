@@ -13,11 +13,11 @@ public class P4TripletSumToZero {
         Arrays.sort(arr);
         List<List<Integer>> triplets = new ArrayList<>();
         for (int i = 0; i < arr.length - 2; i++) {
-            //skip same elements
-            if (i > 0 && arr[i] == arr[i - 1])
+            if (i > 0 && arr[i] == arr[i - 1]) // skip same element to avoid duplicate triplets
                 continue;
             searchPair(arr, -arr[i], i + 1, triplets);
         }
+
         return triplets;
     }
 
@@ -25,19 +25,18 @@ public class P4TripletSumToZero {
         int right = arr.length - 1;
         while (left < right) {
             int currentSum = arr[left] + arr[right];
-            // found triplets
-            if (currentSum == targetSum) {
+            if (currentSum == targetSum) { // found the triplet
+                triplets.add(Arrays.asList(-targetSum, arr[left], arr[right]));
                 left++;
                 right--;
                 while (left < right && arr[left] == arr[left - 1])
-                    //skip same element to avoid duplicate triplet
-                    left++;
+                    left++; // skip same element to avoid duplicate triplets
                 while (left < right && arr[right] == arr[right + 1])
-                    //skip same element to avoid duplicates triplet
-                    right--;
+                    right--; // skip same element to avoid duplicate triplets
             } else if (targetSum > currentSum)
                 left++; // we need a pair with a bigger sum
-            else right--; // we need a pair with smaller sum
+            else
+                right--; // we need a pair with a smaller sum
         }
     }
 
@@ -62,7 +61,7 @@ public class P4TripletSumToZero {
         return triplets;
     }
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         System.out.println(searchTripletsO(new int[]{-3, 0, 1, 2, -1, 1, -2}));
         System.out.println(searchTripletsO(new int[]{-5, 2, -1, -2, 3}));
     }

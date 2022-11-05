@@ -18,7 +18,7 @@ public class SP3MinimumSubstring {
                 if (charFrequencyMap.get(rightChar) >= 0) // count every matching of a character
                     matched++;
             }
-
+;
             // shrink the window if we can, finish as soon as we remove a matched character
             while (matched == pattern.length()) {
                 if (minLength > windowEnd - windowStart + 1) {
@@ -45,5 +45,6 @@ public class SP3MinimumSubstring {
         System.out.println(findSubstring("aabdec", "abac"));
         System.out.println(findSubstring("abdbca", "abc"));
         System.out.println(findSubstring("adcad", "abc"));
+        System.out.println(findSubstring("ADOBECODEBANC", "ABC"));
     }
 }

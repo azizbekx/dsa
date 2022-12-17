@@ -1,4 +1,4 @@
-package leetcode.daily.october;
+package leetcode.october;
 
 import java.util.*;
 

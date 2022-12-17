@@ -1,4 +1,4 @@
-package leetcode.daily.contest;
+package leetcode.contest;
 
 public class SumOfNumberAndItsReverse {
     public static boolean sumOfNumberAndReverse(int num) {

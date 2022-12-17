@@ -1,4 +1,4 @@
-package leetcode.daily.october;
+package leetcode.october;
 
 public class P9TwoSumIVBST {
 

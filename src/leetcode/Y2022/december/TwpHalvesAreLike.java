@@ -1,4 +1,4 @@
-package leetcode.december;
+package leetcode.Y2022.december;
 
 import java.util.HashMap;
 import java.util.Map;

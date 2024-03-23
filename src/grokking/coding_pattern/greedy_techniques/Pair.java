@@ -1,6 +1,6 @@
 package grokking.coding_pattern.greedy_techniques;
 
-public class Pair{
+class Pair{
     int cost1;
     int cost2;
     int diff1Over2;

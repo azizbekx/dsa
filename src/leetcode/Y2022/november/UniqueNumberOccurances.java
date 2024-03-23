@@ -1,4 +1,4 @@
-package leetcode.november;
+package leetcode.Y2022.november;
 
 class UniqueNumberOccurances {
     public boolean uniqueOccurrences(int[] arr) {

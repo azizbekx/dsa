@@ -1,4 +1,4 @@
-package leetcode.december;
+package leetcode.Y2022.december;
 
 import grokking.coding_pattern.TreeNode;
 
